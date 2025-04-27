@@ -2,7 +2,7 @@
    Set Library and Import Data
    =========================================== */
 
-%let path=/home/u64167964/TSA_Claims_Analysis/data;
+%let path=./data;
 libname tsa "&path";
 
 options validvarname=v7;
@@ -157,7 +157,7 @@ title;
    =========================================== */
 
 /* Set output path */
-%let outpath=/home/u64167964/TSA_Claims_Analysis/output;
+%let outpath=./output; /* Relative path to the 'output' folder */
 
 /* Start PDF */
 ods pdf file="&outpath/ClaimsReport.pdf" style=Meadow;
