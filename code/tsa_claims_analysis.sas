@@ -214,3 +214,24 @@ title;
 
 /* Close PDF */
 ods pdf close;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* proc report data=tsa.claims_cleaned nowd;
+    columns Claim_Type Claim_Site Disposition;
+    where StateName = "&StateName" and Date_Issues is missing;
+run; */
+
+
